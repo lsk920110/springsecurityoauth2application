@@ -25,12 +25,12 @@ public class IndexController {
 
         ClientRegistration clientRegistration = this.clientRegistrationRepository.findByRegistrationId("keyclock");
 
-//        String clientId = clientRegistration.getClientId();
-//        System.out.println("clientId = " + clientId);
-////
-//        String redirectUri = clientRegistration.getRedirectUri();
-//        System.out.println("redirectUri = " + redirectUri);
+        String clientId = clientRegistration.getClientId();
+        System.out.println("clientId = " + clientId);
 //
+        String redirectUri = clientRegistration.getRedirectUri();
+        System.out.println("redirectUri = " + redirectUri);
+
 
         return "index";
     }
