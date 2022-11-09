@@ -18,7 +18,7 @@ public class OAuth2ClientConfig {
 
     private ClientRegistration keyclockClientRegistration() {
 
-        ClientRegistration asd = ClientRegistrations
+        return ClientRegistrations
                 .fromIssuerLocation("http://localhost:8080/realms/oauth2")
                 .registrationId("keycloak")
                 .clientId("oauth2-client-app")
@@ -26,9 +26,7 @@ public class OAuth2ClientConfig {
                 .redirectUri("http://localhost:8081/login/oauth2/code/keycloak")
 //                .issuerUri("http://localhost:8080/realms/oauth2")
                 .build();
-        System.out.println("ClientId = "+asd.getClientId());
 
-        return asd;
     }
 
 
